@@ -1,0 +1,158 @@
+{
+  "Clients": [
+    {
+      "Name": "John",
+      "SecondName": "Wick",
+      "Patronymic": "BoogeyMan",
+      "Phone": "Lost",
+      "Passport": "Belarusian",
+      "LastChange": "12.06.2023 22:39",
+      "ChangeType": "Edited",
+      "ChangedField": "Phone",
+      "ChangedBy": "Consultant",
+      "Accounts": {
+        "Basic": {
+          "Amount": 997992
+        }
+      }
+    },
+    {
+      "Name": "Ryan",
+      "SecondName": "Gosling",
+      "Patronymic": "Thomas",
+      "Phone": "American",
+      "Passport": "American",
+      "LastChange": "13.05.2023 17:10",
+      "ChangeType": "Edited",
+      "ChangedField": "Phone",
+      "ChangedBy": "Manager",
+      "Accounts": {
+        "Basic": {
+          "Amount": 1336700
+        },
+        "Deposit": {
+          "Amount": 5,
+          "Rate": 1
+        }
+      }
+    },
+    {
+      "Name": "john",
+      "SecondName": "john",
+      "Patronymic": "New Value",
+      "Phone": "89999879898",
+      "Passport": "-",
+      "LastChange": "25.06.2023 15:58",
+      "ChangeType": "Edited",
+      "ChangedField": "Name",
+      "ChangedBy": "Manager",
+      "Accounts": {}
+    },
+    {
+      "Name": "Denji",
+      "SecondName": "Possessed",
+      "Patronymic": "ChainsawMan",
+      "Phone": "japanese",
+      "Passport": "Japanese",
+      "LastChange": "25.06.2023 15:57",
+      "ChangeType": "Edited",
+      "ChangedField": "Phone",
+      "ChangedBy": "Consultant",
+      "Accounts": {
+        "Basic": {
+          "Amount": 2000020
+        }
+      }
+    },
+    {
+      "Name": "Sara",
+      "SecondName": "Kerrigan",
+      "Patronymic": "Terran",
+      "Phone": "Unknown",
+      "Passport": "Earth",
+      "LastChange": "01.07.2023 1:36",
+      "ChangeType": "Initialization",
+      "ChangedField": "-",
+      "ChangedBy": "Manager",
+      "Accounts": {
+        "Basic": {
+          "Amount": 11000
+        },
+        "Deposit": {
+          "Amount": 1,
+          "Rate": 1
+        }
+      }
+    },
+    {
+      "Name": "Twayne",
+      "SecondName": "Boneraper",
+      "Patronymic": "Demon",
+      "Phone": "American",
+      "Passport": "Hell",
+      "LastChange": "02.07.2023 0:32",
+      "ChangeType": "Initialization",
+      "ChangedField": "-",
+      "ChangedBy": "Manager",
+      "Accounts": {
+        "Basic": {
+          "Amount": 999000000
+        },
+        "Deposit": {
+          "Amount": 1000000000,
+          "Rate": 100
+        }
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Move": 0,
+      "Profile": "Twayne",
+      "User": "Manager",
+      "Time": "2023-07-02T00:32:33.3095184\u002B03:00"
+    },
+    {
+      "Move": 2,
+      "Profile": "Twayne",
+      "User": "Manager",
+      "Time": "2023-07-02T00:32:46.334703\u002B03:00"
+    },
+    {
+      "Move": 2,
+      "Profile": "Twayne",
+      "User": "Manager",
+      "Time": "2023-07-02T00:33:07.3426772\u002B03:00"
+    },
+    {
+      "Move": 3,
+      "Profile": "Twayne",
+      "User": "Manager",
+      "Time": "2023-07-02T00:33:22.9757916\u002B03:00"
+    },
+    {
+      "Move": 3,
+      "Profile": "Ryan",
+      "User": "Manager",
+      "Time": "2023-07-02T00:33:37.0453861\u002B03:00"
+    },
+    {
+      "Move": 2,
+      "Profile": "john",
+      "User": "Manager",
+      "Time": "2023-07-02T00:33:57.9016754\u002B03:00"
+    },
+    {
+      "Move": 5,
+      "Profile": "john",
+      "User": "Manager",
+      "Time": "2023-07-02T00:34:00.7995195\u002B03:00"
+    },
+    {
+      "Move": 3,
+      "Profile": "John",
+      "User": "Consultant",
+      "Time": "2023-07-02T00:35:23.8656596\u002B03:00"
+    }
+  ]
+}

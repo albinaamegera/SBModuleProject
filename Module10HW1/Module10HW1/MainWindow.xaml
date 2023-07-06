@@ -1,0 +1,190 @@
+﻿<Window x:Class="Module10HW1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module10HW1"
+        mc:Ignorable="d"
+        Title="Bank Client Data Base" 
+        MinHeight="400"
+        MinWidth="800"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="2">
+        <Grid.Resources>
+            <Style TargetType="{x:Type StackPanel}">
+                <Setter Property="Margin" Value="2"/>
+            </Style>
+            <Style TargetType="{x:Type TabItem}">
+                <Setter Property="Width" Value="100"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="MinWidth" Value="40"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Session"
+                   Grid.Column="0"/>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Column="1"
+                    HorizontalAlignment="Right">
+            <Button x:Name="ChangeUser"
+                    Content="ChangeUser"
+                    Click="ChangeUser_Click"/>
+            <Button x:Name="ExitButton"
+                    Content="Exit"
+                    Click="ExitButton_Click"/>
+        </StackPanel>
+        <TabControl Grid.Row="1"
+                  Grid.Column="0">
+            <TabItem Header="Profiles">
+        <ListView x:Name="ClientList"
+                  SelectedIndex="0"
+                  SelectionChanged="ClientList_SelectionChanged">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true"
+                          ColumnHeaderToolTip="Client info">
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}">
+                        <GridViewColumnHeader Content="Name"
+                                              Click="NameColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding SecondName}">
+                        <GridViewColumnHeader Content="Second Name"
+                                              Click="SecondNameColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Patronymic}">
+                        <GridViewColumnHeader Content="Patronymic"
+                                              Click="PatronymicColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Phone}">
+                        <GridViewColumnHeader Content="Phone Number"
+                                              Click="PhoneColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn x:Name="PassportInfo">
+                        <GridViewColumnHeader Content="Passport"
+                                              Click="PassportColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding LastChange}">
+                        <GridViewColumnHeader Content="Last Change"
+                                              Click="LCColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding ChangeType}">
+                        <GridViewColumnHeader Content="Change Type"
+                                              Click="TypeColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding ChangedField}">
+                        <GridViewColumnHeader Content="Changed Field"
+                                              Click="FieldColumnHeader_Click"/>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding ChangedBy}">
+                        <GridViewColumnHeader Content="By"
+                                              Click="ChangerColumnHeader_Click"/>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
+            </TabItem>
+            <TabItem Header="Operations">
+                <ListView x:Name="OperationsLog">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Operation"
+                                            Width="100"
+                                            DisplayMemberBinding="{Binding Move}"/>
+                            <GridViewColumn Header="Profile"
+                                            Width="100"
+                                            DisplayMemberBinding="{Binding Profile}"/>
+                            <GridViewColumn Header="User"
+                                            Width="100"
+                                            DisplayMemberBinding="{Binding User}"/>
+                            <GridViewColumn Header="Time"
+                                            Width="200"
+                                            DisplayMemberBinding="{Binding Time}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        </TabControl>
+        <TabControl x:Name="Tab"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="2">
+            <TabItem Header="Edit">
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBlock Text="Select field to edit"
+                       Margin="2"/>
+                        <ComboBox x:Name="EditingValue"
+                      SelectedIndex="0"
+                      Margin="2">
+                        </ComboBox>
+                        <TextBox x:Name="NewValue"
+                     Margin="2"
+                     Text="New Value"/>
+                        <Button x:Name="EditButton"
+                    Content="Edit"
+                    Click="EditButton_Click"/>
+                        <Button x:Name="AddNewButton"
+                    Content="Add New"
+                    Visibility="Hidden"
+                    Click="AddNewButton_Click"/>
+                        <Button x:Name="CreateAccountBatton"
+                    Content="Create New Bank Account"
+                    Visibility="Hidden" 
+                    Click="CreateAccountBatton_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem Header="Account">
+                <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+                    <TextBlock Margin="2">
+                        Bank Account Info
+                    </TextBlock>
+                    <ListView x:Name="AccountList"
+                              SelectedIndex="0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding Name}"
+                                               FontSize="16"/>
+                                    <TextBlock Text="{Binding Info}"
+                                               FontSize="12"
+                                               Foreground="Gray"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Right">
+                        <Button x:Name="CloseButton"
+                                Content="Close"
+                                Visibility="Hidden"
+                                Width="60"
+                                Click="CloseButton_Click"/>
+                        <Button x:Name="TransactButton"
+                                Content="Transact"
+                                Width="60" 
+                                Click="TransactButton_Click"
+                                />
+                        <Button x:Name="DepositButton"
+                                Content="Fill up"
+                                Width="60" 
+                                Click="DepositButton_Click"/>
+                        
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

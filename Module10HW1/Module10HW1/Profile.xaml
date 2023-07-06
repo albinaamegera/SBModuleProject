@@ -1,0 +1,99 @@
+﻿<Window x:Class="Module10HW1.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module10HW1"
+        mc:Ignorable="d"
+        Title="Profile" 
+        MinHeight="200"
+        MinWidth="300"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    <Grid Margin="5">
+        <Grid.Resources>
+            <!--Default settings for control-->
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+                <Setter Property="FontWeight" Value="SemiBold"/>
+            </Style>
+            <!--<Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Visibility" Value="Hidden"/>
+            </Style>-->
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <!--<Setter Property="Visibility" Value="Hidden"/>-->
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Width" Value="70"/>
+                <Setter Property="Height" Value="25"/>
+                <Setter Property="Margin" Value="2"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" 
+               Grid.Row="0">
+            Name
+        </Label>
+        <Label Grid.Column="0" 
+               Grid.Row="1">
+            Second Name
+        </Label>
+        <Label Grid.Column="0" 
+               Grid.Row="0">
+            Name
+        </Label>
+        <Label Grid.Column="0" 
+               Grid.Row="2">
+            Patronymic
+        </Label>
+        <Label Grid.Column="0" 
+               Grid.Row="3">
+            Phone Number
+        </Label>
+        <Label Grid.Column="0" 
+               Grid.Row="4">
+            Passport
+        </Label>
+        
+        <TextBox x:Name="FirstNameBox" 
+                   Grid.Column="1"
+                   Grid.Row="0"/>
+        <TextBox x:Name="SecondNameBox"
+                   Grid.Column="1"
+                   Grid.Row="1"/>
+        <TextBox x:Name="PatronymicBox" 
+                   Grid.Column="1"
+                   Grid.Row="2"/>
+        <TextBox x:Name="PhoneBox"
+                   Grid.Column="1"
+                   Grid.Row="3"/>
+        <TextBox x:Name="PassportBox" 
+                   Grid.Column="1"
+                   Grid.Row="4"/>
+        <StackPanel Grid.ColumnSpan="2"
+                    Grid.Row="5"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button x:Name="OKButton" 
+                    Content="OK" 
+                    Click="OKButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
