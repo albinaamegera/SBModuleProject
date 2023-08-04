@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj": {}
+    "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj": {
+    "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj",
         "projectName": "ModuleLibrary",
-        "projectPath": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj",
+        "projectPath": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj",
         "packagesPath": "C:\\Users\\Albina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

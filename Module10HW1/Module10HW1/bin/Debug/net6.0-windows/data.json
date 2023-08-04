@@ -107,6 +107,22 @@
           "Rate": 100
         }
       }
+    },
+    {
+      "Name": "BoJack",
+      "SecondName": "F.",
+      "Patronymic": "HorseMan",
+      "Phone": "19999999999",
+      "Passport": "American",
+      "LastChange": "06.07.2023 22:59",
+      "ChangeType": "Initialization",
+      "ChangedField": "-",
+      "ChangedBy": "Manager",
+      "Accounts": {
+        "Basic": {
+          "Amount": 100
+        }
+      }
     }
   ],
   "Operations": [
@@ -169,6 +185,18 @@
       "Profile": "Twayne",
       "User": "Manager",
       "Time": "2023-07-06T21:18:53.5345565\u002B03:00"
+    },
+    {
+      "Move": 0,
+      "Profile": "BoJack",
+      "User": "Manager",
+      "Time": "2023-07-06T22:59:25.810152\u002B03:00"
+    },
+    {
+      "Move": 2,
+      "Profile": "BoJack",
+      "User": "Manager",
+      "Time": "2023-07-06T22:59:46.109561\u002B03:00"
     }
   ]
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Albina\source\repos\Module10HW1\Module10HW1\obj\Debug\net6.0-windows\
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\Module10HW1\obj\Debug\net6.0-windows\
 Module10HW1
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Albina\source\repos\Module10HW1\Module10HW1\App.xaml
-6-2079509079
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\Module10HW1\App.xaml
+7-1320842993
 
-10-1839082322
-195215097166
-FillUpWindow.xaml;MainWindow.xaml;NewAccountWindow.xaml;Profile.xaml;StartWindow.xaml;TransactToWindow.xaml;
+11-5678559
+19575337403
+FillUpWindow.xaml;Loading.xaml;MainWindow.xaml;NewAccountWindow.xaml;Profile.xaml;StartWindow.xaml;TransactToWindow.xaml;
 
-False
+True
 

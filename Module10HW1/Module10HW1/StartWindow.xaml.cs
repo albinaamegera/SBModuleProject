@@ -20,7 +20,6 @@ namespace Module10HW1
     /// </summary>
     public partial class StartWindow : Window
     {
-        
         public StartWindow()
         {
             InitializeComponent();
@@ -33,9 +32,12 @@ namespace Module10HW1
 
         private void SelectButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow(users.SelectedItem as IWorker);
-            mainWindow.Show();
-            this.Close();
+            Loading lw = new();
+            lw.LoadingComplete += () =>
+            {
+                MainWindow mw = new(users.SelectedItem as IWorker);
+                Close();
+            };
         }
     }
 }

@@ -10,3 +10,15 @@ C:\Users\Albina\source\repos\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLi
 C:\Users\Albina\source\repos\Module10HW1\ModuleLibrary\obj\Debug\net6.0\refint\ModuleLibrary.dll
 C:\Users\Albina\source\repos\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.pdb
 C:\Users\Albina\source\repos\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ref\ModuleLibrary.dll
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\bin\Debug\net6.0\ModuleLibrary.deps.json
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\bin\Debug\net6.0\ModuleLibrary.dll
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\bin\Debug\net6.0\ModuleLibrary.pdb
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.csproj.AssemblyReference.cache
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.AssemblyInfoInputs.cache
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.AssemblyInfo.cs
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.dll
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\refint\ModuleLibrary.dll
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ModuleLibrary.pdb
+C:\Users\Albina\Documents\GitHub\SBModuleProject\Module10HW1\ModuleLibrary\obj\Debug\net6.0\ref\ModuleLibrary.dll

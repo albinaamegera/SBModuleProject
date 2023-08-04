@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\Module10HW1\\Module10HW1.csproj",
+      "projectUniqueName": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\Module10HW1\\Module10HW1.csproj",
       "projectName": "Module10HW1",
-      "projectPath": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\Module10HW1\\Module10HW1.csproj",
+      "projectPath": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\Module10HW1\\Module10HW1.csproj",
       "packagesPath": "C:\\Users\\Albina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\Module10HW1\\obj\\",
+      "outputPath": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\Module10HW1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj": {
-              "projectPath": "C:\\Users\\Albina\\source\\repos\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj"
+            "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj": {
+              "projectPath": "C:\\Users\\Albina\\Documents\\GitHub\\SBModuleProject\\Module10HW1\\ModuleLibrary\\ModuleLibrary.csproj"
             }
           }
         }

@@ -16,6 +16,7 @@ using System.IO;
 using System.Collections.ObjectModel;
 using ModuleLibrary;
 using System.Windows.Controls.Primitives;
+using System.Threading;
 
 namespace Module10HW1
 {
@@ -110,6 +111,11 @@ namespace Module10HW1
             popup.PopupAnimation = PopupAnimation.Slide;
             popup.IsOpen = true;
         }
+        private void Window_Initialized(object sender, EventArgs e)
+        {
+            Thread.Sleep(100);
+            Show();
+        }
         #endregion
 
         #region Buttons Click Events
@@ -187,9 +193,9 @@ namespace Module10HW1
         }
         private void ChangeUser_Click(object sender, RoutedEventArgs e)
         {
-            var startWindow = new StartWindow();
-            startWindow.Show();
-            this.Close();
+            StartWindow sw = new();
+            sw.Show();
+            Close();
         }
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
@@ -234,6 +240,8 @@ namespace Module10HW1
         {
             Repository.Sort(SortBy.ChangeBy);
         }
+
+
 
 
 

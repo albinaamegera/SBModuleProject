@@ -10,6 +10,9 @@
     <Compile Update="FillUpWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Loading.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="NewAccountWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="FillUpWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Loading.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
